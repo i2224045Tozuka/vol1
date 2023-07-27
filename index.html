@@ -12,9 +12,49 @@
   
   <style>
 
+  /* ナビゲーションのスタイル */
+  nav {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f2f2f2;
+  }
 
-    @media only screen and (max-width: 480px) {
-    p {
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+
+  /* コンテナとグリッドのスタイル */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .item {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  /* スマートフォン向けスタイル（メディアクエリ） */
+  @media only screen and (max-width: 480px) {
+  p {
      color: rgb(0, 50, 255);
     }
     h1 {
